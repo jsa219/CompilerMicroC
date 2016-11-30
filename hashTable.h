@@ -1,9 +1,4 @@
-/*
- * CSE 109
- * Jordan Alam
- * jsa219
- * hashTable.h
- */
+// used form Professor Femmister
 
 #ifndef HASHTABLE_H
 #define HASHTABLE_H

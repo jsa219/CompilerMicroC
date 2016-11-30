@@ -1,9 +1,4 @@
-/*
- * CSE 109
- * Jordan Alam
- * jsa219
- * hashTable.cc
- */
+// Used from professor Femmister
  
  #include "hashTable.h"
 
