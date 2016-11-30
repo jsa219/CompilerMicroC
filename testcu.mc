@@ -17,3 +17,11 @@ function add(a1, a2) {
   return a;
 }
 
+function adl(a1, a2) {
+  var a;
+  a = a1 + a2;
+  a1 = 1;
+  a2 = 4;
+      printf("  %ld   %ld\n", a1, a2);
+  return a;
+}

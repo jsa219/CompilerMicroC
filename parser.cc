@@ -644,6 +644,8 @@ void Parser::geninst(TreeNode* node) {
 				if(currentFunc != "main:") {
 					emit("  pop r15");
 				}
+				else {
+				}
 				break;
 				
 			case STORE:
@@ -658,6 +660,11 @@ void Parser::geninst(TreeNode* node) {
 				  emit("  push r15");
 				}
 				emit("  ret");
+				if(currentFunc == "main:") {
+					emit("  mov rax,1");
+					emit("  int 0x80");
+				}
+				
 				
 				break;	
 			
