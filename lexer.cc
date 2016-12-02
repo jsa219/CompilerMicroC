@@ -275,7 +275,7 @@ token lexer::nextToken() {
 		case(')'): // RPAREN
 		  lex+=c;
 		  c = nextChar();
-		  if(!isalnum(c) && !(c == ';') && !(c == ')')  && !(c == ' ') && !(c == '{')){
+		  if(!isalnum(c) && !(c == ';') && !(c == ')')  && !(c == ' ') && !(c == '{') && !(c == '/') && !(c == '*')){
 		    lex+=c;
 		    return token(token::ERROR, lex, startLine, startPos);
 		  }else {

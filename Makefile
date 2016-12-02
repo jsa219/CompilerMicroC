@@ -39,4 +39,4 @@ hash.o: hash.h hash.cc
 
 
 clean:
-	rm -f lextest microc *.o *~ 
+	rm -f lextest microc *.o *~ *.asm

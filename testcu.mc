@@ -8,6 +8,8 @@ function main() {
     sum = add(sum, i);
     printf("  %ld   %ld\n", i, sum);
   }
+
+	printf("     %ld\n", doubleSquare(sum));
   return 0;
 }
 
@@ -24,4 +26,11 @@ function adl(a1, a2) {
   a2 = 4;
       printf("  %ld   %ld\n", a1, a2);
   return a;
+}
+
+
+function doubleSquare(a1) {
+	var a;
+	a = (a1 * a1) * 2;
+	return a;
 }
