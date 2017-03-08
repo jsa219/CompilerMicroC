@@ -295,7 +295,7 @@ token lexer::nextToken() {
 		case('}'): // RBRACE
 		  lex+=c;
 		  c = nextChar();
-		    if(isalnum(c) || (c == ' ' || c == '{')) {
+		    if(isalnum(c) || (c == ' ' || c == '{' || c == '#')) {
 		    return token(token::RBRACE, lex, startLine, startPos);
 		  }else {
 		    lex+=c;
